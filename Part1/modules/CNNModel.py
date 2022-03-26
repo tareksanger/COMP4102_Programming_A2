@@ -44,13 +44,11 @@ class CNNModel:
 
         elif self.id == 5:
             model.add(Conv2D(filters=64, kernel_size=(3, 3), padding='same', activation='relu'))
-            model.add(MaxPooling2D((3, 3), strides=2,padding='valid'))
+            model.add(MaxPooling2D((2, 2), strides=2,padding='valid'))
 
             model.add(Conv2D(filters=128, kernel_size=(3, 3), padding='same', activation='relu'))
-            model.add(MaxPooling2D((2, 2), strides=2,padding='valid'))
+            model.add(MaxPooling2D((3, 3), strides=2,padding='valid'))
  
-
-
         model.add(Flatten())
         model.add(Dense(64, activation='relu'))
         model.add(Dropout(0.25))
