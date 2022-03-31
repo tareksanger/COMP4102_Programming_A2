@@ -24,6 +24,8 @@ print("Y Train: ", y_train.shape)
 print("X Test: ", x_test.shape)
 print("Y Test: ", y_test.shape)
 
+# Note: All plots and diagrams are displayed after all models have been trained.
+
 '''
     Display some random training images in a 25x25 grid.
 
@@ -65,7 +67,7 @@ for m_id in range(1,6):
     CNNModel.plot_history(history, save_dir, m_id, show=False)
 
     # Save the History and the Model
-    CNNModel.save_model(model, history, save_dir)
+    CNNModel.save_model(model, history, save_dir, m_id)
 
     model.evaluate(x_test,y_test)
     tf.keras.backend.clear_session()

@@ -1,6 +1,5 @@
-from tensorflow.keras import Sequential, losses
+from tensorflow.keras import Sequential, regularizers
 from tensorflow.keras.layers import Dense, Conv2D, MaxPooling2D, Flatten
-from keras import regularizers
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -61,10 +60,10 @@ class CNNModel:
         return model
     
     @staticmethod
-    def save_model(model, history, dir):
-        pd.DataFrame(history.history).to_hdf(os.path.join(dir, f"history.h5"), 'history')
-        model.save(os.path.join(dir, f'/model.h5'))
-        model.save_weights(os.path.join(dir, f'/final_weights.hdf5'), overwrite=True)
+    def save_model(model, history, dir, m_id):
+        pd.DataFrame(history.history).to_hdf(os.path.join(dir, f"{m_id}/history.h5"), 'history')
+        model.save(os.path.join(dir, f'{m_id}/model.h5'))
+        model.save_weights(os.path.join(dir, f'{m_id}/final_weights.hdf5'), overwrite=True)
 
     @staticmethod
     def plot_history(history, save_dir, m_id, show=True):
