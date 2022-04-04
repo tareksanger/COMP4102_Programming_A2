@@ -34,5 +34,7 @@ You can also view, training.ipynb to view the completed process - For some odd r
 
 For Q1.3 the code can be found in patches.ipynb - This displays the patches for 'Model 5'.
 
+All Saves can be found in 'Part1/Model/{i}/'.
+
 
 # Question 2
