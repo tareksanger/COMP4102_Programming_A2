@@ -47,7 +47,7 @@ for i in range(25):
 
 save_dir = os.path.dirname(os.path.abspath(__file__)) + '/Models'
 
-for m_id in range(1,6):
+for m_id in range(1,2):
 
     print(f'# Model {m_id} ', "-" * 60)
 

@@ -17,7 +17,7 @@ Python v3.7
 
 # Question 1
 
-Code can be found in the Part1/ directory. 
+Code can be found in the 'Part1/' directory. 
 
 To test Q1.1 & Q1.2 run,
 
@@ -27,9 +27,12 @@ python Part1/Q1.py
 
 ```
 
-There is also a sample of a single training session in Part1/train.ipynb. 
+OR  
 
-For Q1.3 the code can be found in patches.ipynb. 
+You can also view, training.ipynb to view the completed process - For some odd reason the Model Plots did not want to display in the notebook - So we created a notebook to display the plot_model results.
+
+
+For Q1.3 the code can be found in patches.ipynb - This displays the patches for 'Model 5'.
 
 
 # Question 2
