@@ -55,7 +55,7 @@ class CNNModel:
         # model.add(Dropout(0.25))
         model.add(Dense(10, activation='softmax'))
     
-        model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',metrics=['accuracy'])
+        model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
         return model
     
